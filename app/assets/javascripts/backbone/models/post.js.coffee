@@ -6,7 +6,7 @@ class BackboneBlog.Models.Post extends Backbone.Model
   paramRoot: 'post'
 
   # sets default values for model
-  defaults:
+  # defaults:
 
 class BackboneBlog.Collections.PostsCollection extends Backbone.Collection
 	# what objects collection should have
