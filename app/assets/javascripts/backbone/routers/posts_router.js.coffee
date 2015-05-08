@@ -11,16 +11,16 @@ class BackboneBlog.Routers.PostsRouter extends Backbone.Router
 		":id/edit"	: "edit"
 		".*"				: "index"
 
-		index: ->
-			@view = new BackboneBlog.Views.PostsIndexView({collection: @posts})
+	index: ->
+		@view = new BackboneBlog.Views.PostsIndexView({collection: @posts})
 
-		newPost: ->
-			@view = new BackboneBlog.Views.PostsNewView({collection: @posts})
+	newPost: ->
+		@view = new BackboneBlog.Views.PostsNewView({collection: @posts})
 
-		show: (id) ->
-			post = @posts.get(id)
-			@view = new BackboneBlog.Views.PostsShowView({model: post})
+	show: (id) ->
+		post = @posts.get(id)
+		@view = new BackboneBlog.Views.PostsShowView({model: post})
 
-		edit: (id) ->
-			post = @posts.get(id)
-			@view = new BackboneBlog.Views.PostsEditView({model: post})
+	edit: (id) ->
+		post = @posts.get(id)
+		@view = new BackboneBlog.Views.PostsEditView({model: post})
